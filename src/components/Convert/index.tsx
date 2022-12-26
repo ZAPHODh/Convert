@@ -70,7 +70,7 @@ export const Convert = ({
               setTo(from);
             }}
           >
-            <SwapHorizIcon />
+            <SwapHorizIcon fontSize="inherit" />
           </Styled.SwitchButton>
           <Styled.DropDown>
             {to}

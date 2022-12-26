@@ -86,6 +86,8 @@ export const Switch = styled.div`
 `;
 
 export const SwitchButton = styled.span`
+font-size: 40px;
+padding-top: 10px;
 ${() => css`
   &:hover{
     color:gray;
