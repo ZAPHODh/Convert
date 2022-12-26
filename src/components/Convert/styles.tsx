@@ -18,7 +18,7 @@ export const ConvertForm = styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   background-color: ${theme.colors.secondaryColor};
   color:${theme.colors.primaryColor};
   `}
@@ -28,13 +28,13 @@ export const DropDown = styled.div`
     cursor:default;
     position: relative;
     display:flex;
-    width: 270px;
+    width: 360px;
     height: 30px;
     justify-content: space-between;
     padding-left:10px ;
     align-items: center;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 15px;
     color: ${theme.colors.secondaryColor};
     background-color: ${theme.colors.primaryColor};
     &:hover ${DropDownContent}{
@@ -51,16 +51,15 @@ export const DropDownContent = styled.div`
     display: none;
     position: absolute;
     top:3rem;
-    left:4.6rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width:178px;
+    width:340px;
 
     `}
 `;
 export const DropDownItem = styled.p`
     ${({ theme }) => css`
-    width: 270px;
+    width: 360px;
     height: 100%;
     padding: 10px;
     padding-top: 5px;
@@ -97,7 +96,7 @@ ${() => css`
 
 export const InputArea = styled.textarea`
   ${({ theme }) => css`
-  font-size: 8px;
+  font-size: 15px;
   background-color:${theme.colors.primaryColor};
   color: ${theme.colors.secondaryColor};
   resize: vertical;
@@ -112,7 +111,7 @@ export const InputArea = styled.textarea`
   &:placeholder-shown{
 
     color: gray;
-    font-size: 8px;
+    font-size: 15px;
   }
   `}
 `;
@@ -120,7 +119,7 @@ export const InputArea = styled.textarea`
 export const SendContainer = styled.div`
   width: 100%;
   display: flex;
-  padding: 15px;
+  padding: 10px 20px;
 `;
 
 export const InputSend = styled.input`
@@ -141,7 +140,7 @@ export const InputSend = styled.input`
 
 export const OutputArea = styled.textarea`
   ${({ theme }) => css`
-  font-size: 8px;
+  font-size: 15px;
   background-color:${theme.colors.mediumGray};
   color: black;
   resize: vertical;
