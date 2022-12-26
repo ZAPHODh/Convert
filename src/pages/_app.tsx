@@ -1,16 +1,18 @@
-import { ThemeProvider } from 'styled-components';
-import { theme } from '../styles/theme';
 import { AppProps } from 'next/app';
 
 import '../../public/assets/fonts/styles.css';
 import { GlobalStyles } from '../styles/global-styles';
+import { AppThemeProvider } from 'contexts/AppThemeContext';
+import { AppLanguageProvider } from 'contexts/AppLanguageContext';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyles />
-    </ThemeProvider>
+    <AppLanguageProvider>
+      <AppThemeProvider>
+        <Component {...pageProps} />
+        <GlobalStyles />
+      </AppThemeProvider>
+    </AppLanguageProvider>
   );
 }
 

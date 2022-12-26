@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import {AppThemeProvider} from '../src/contexts/AppThemeContext'
 import { GlobalStyles } from '../src/styles/global-styles';
 import { theme } from '../src/styles/theme';
 import '../public/assets/fonts/styles.css';
@@ -22,9 +22,9 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={theme}>
+    <AppThemeProvider>
       <Story />
       <GlobalStyles />
-    </ThemeProvider>
+    </AppThemeProvider>
   ),
 ];

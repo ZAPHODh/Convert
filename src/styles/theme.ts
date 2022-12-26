@@ -1,7 +1,8 @@
 export const theme = {
+  name: 'white',
   colors: {
-    primaryColor: '#0A1128',
-    secondaryColor: '#dc143c',
+    primaryColor: 'white',
+    secondaryColor: 'black',
     white: '#FFFFFF',
     mediumGray: '#DDDDDD',
   },
@@ -34,4 +35,11 @@ export const theme = {
     huge: '5.6rem',
     xhuge: '6.4rem',
   },
-} as const;
+};
+
+export const blackTheme = {
+  primaryColor: 'black',
+  secondaryColor: 'White',
+  white: '#FFFFFF',
+  mediumGray: '#DDDDDD',
+};
