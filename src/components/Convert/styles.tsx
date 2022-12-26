@@ -18,6 +18,7 @@ export const ConvertForm = styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 300px;
   background-color: ${theme.colors.secondaryColor};
   color:${theme.colors.primaryColor};
   `}
@@ -27,7 +28,7 @@ export const DropDown = styled.div`
     cursor:default;
     position: relative;
     display:flex;
-    width: 180px;
+    width: 270px;
     height: 30px;
     justify-content: space-between;
     padding-left:10px ;
@@ -50,7 +51,7 @@ export const DropDownContent = styled.div`
     display: none;
     position: absolute;
     top:3rem;
-    left:-0.05rem;
+    left:4.6rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width:178px;
@@ -59,7 +60,7 @@ export const DropDownContent = styled.div`
 `;
 export const DropDownItem = styled.p`
     ${({ theme }) => css`
-    width: 100%;
+    width: 270px;
     height: 100%;
     padding: 10px;
     padding-top: 5px;
@@ -119,7 +120,7 @@ export const InputArea = styled.textarea`
 export const SendContainer = styled.div`
   width: 100%;
   display: flex;
-  padding: 10px;
+  padding: 15px;
 `;
 
 export const InputSend = styled.input`
